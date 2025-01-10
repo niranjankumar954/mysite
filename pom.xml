@@ -474,7 +474,7 @@ Bundle-DocURL:
       </build>
     </profile>
     <profile>
-      <id>autoinstallsinglepackage</id>
+      <id>autoInstallSinglePackage</id>
       <activation>
         <activeByDefault>false</activeByDefault>
       </activation>
@@ -491,6 +491,7 @@ Bundle-DocURL:
                 </goals>
                 <configuration>
                   <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
+                  <failOnError>true</failOnError>
                 </configuration>
               </execution>
             </executions>
