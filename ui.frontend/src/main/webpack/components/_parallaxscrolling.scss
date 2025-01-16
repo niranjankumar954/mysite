@@ -1,0 +1,35 @@
+// Best practice:
+// For a good separation of concerns, don't rely on the DOM element names,
+// but on dedicated CSS selectors to identify all elements
+.cmp-parallx-scroll p{
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+      padding: 10px;
+      border-radius: 5px;
+      max-width: 600px;
+      margin: 20px 0;
+}
+.cmp-parallx-scroll {
+      min-height: 100vh; /* At least one full viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 20px;
+      line-height: 1.6;
+      position: relative;
+      z-index: 1; /* Keeps content above the background */
+}
+
+.cmp-next-section {
+      min-height: 100vh; /* At least one full viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4; /* Solid color to cover the background image */
+      color: #333;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative;
+      z-index: 2; /* Ensures it's above the background image */
+    }
